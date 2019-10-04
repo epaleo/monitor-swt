@@ -24,7 +24,7 @@ Move mouse hover component and select **Ctrl+Shift+A** to get information in cos
 ```
 <logger name="com.inditex.swt" level="DEBUG"/>
 ```
-3 Create a java launcher and add **javaagent** in VM options of the launcher. Check that you have the **M2** variable environment.
+3 Create a java launcher and add **javaagent** in VM options of the launcher. Check that you have the **${M2}** variable environment.
 ```
 -javaagent:${M2}/repository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar
 ```
