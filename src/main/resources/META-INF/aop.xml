@@ -1,0 +1,12 @@
+<aspectj>
+
+    <aspects>
+        <aspect name="com.inditex.swt.MonitorWidgets"/>
+    </aspects>
+
+    <weaver options="-verbose -showWeaveInfo">
+        <include within="org.eclipse.swt.widgets.EventTable"/>
+        <include within="org.eclipse.swt.widgets.Control"/>
+    </weaver>
+
+</aspectj>
