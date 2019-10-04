@@ -1,11 +1,13 @@
 # Monitor SWT
 
-Get Widget information in console. 
-Move mouse hover component and select **Ctrl+Shift+A** to get information in cosole.
+Get Widget SWT information in console. 
+Move mouse over a component and press **Ctrl+Shift+A** to get information in console.
 
 ## Getting started
 
-1 Add dependency to your **pom.xml** in your debug profile. For example: oficina.
+1 Add jar and pom from release to your local repository (because the release isn't in maven central)
+
+2 Add dependency to your **pom.xml** project in your debug profile. For example: oficina.
 ```
 <profiles>
     <profile>
@@ -20,22 +22,22 @@ Move mouse hover component and select **Ctrl+Shift+A** to get information in cos
     </profile>
 </profiles>
 ```
-2 Add new log to logback
+3 Add new log to logback
 ```
 <logger name="com.inditex.swt" level="DEBUG"/>
 ```
-3 Create a java launcher and add **javaagent** in VM options of the launcher. Check that you have the **${M2}** variable environment.
+4 Create a java launcher and add **javaagent** in VM options of the launcher. Check that you have the **${M2}** variable environment.
 ```
 -javaagent:${M2}/repository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar
 ```
-4 Execute mvn install project with profile
+5 Execute mvn install with the profile
 ```
 mvn -U clean install -P oficina
 ```
 
-5 Execute launcher in your IDE
+6 Execute launcher in your IDE
 
-6 Now you can move your cursor over a component in your application and press **Ctr+Shift+A**. If everything is ok, you will get a message with information in your console:
+7 Now you can move your cursor over a component in your application and press **Ctr+Shift+A**. If everything is ok, you will get a message with information in your console:
 ```
 [DEBUG] 2019-09-11 22:42:37.818 [main] MonitorWidgets - ######## CURSOR ON COMPONENT ########
 [DEBUG] 2019-09-11 22:42:37.823 [main] MonitorWidgets - class org.eclipse.swt.widgets.Shell
