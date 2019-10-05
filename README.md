@@ -30,7 +30,7 @@ Move mouse over a component and press **Ctrl+Shift+A** to get information in con
 ```
 -javaagent:${M2}/repository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar
 ```
-5 Execute mvn install with the profile.
+5 Execute mvn install with the debug profile.
 ```
 mvn -U clean install -P oficina
 ```
