@@ -5,7 +5,10 @@ Move mouse over a component and press **Ctrl+Shift+A** to get information in con
 
 ## Getting started
 
-1 Add jar and pom from release to your local repository (because the release isn't in maven central).
+1 Add jar and pom from release to your local repository (because the release isn't in maven central). If you local repository is in *W:\M2_REPO_INDITEX* you have to add the files in the next path.
+```
+W:\M2_REPO_INDITEX\com\inditex\swt\monitor-swt\1.0.0
+```
 
 2 Add dependency to your **pom.xml** project in your debug profile. For example: oficina.
 ```
