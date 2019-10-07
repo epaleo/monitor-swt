@@ -14,7 +14,7 @@ W:\M2_REPO_INDITEX\com\inditex\swt\monitor-swt\1.0.0
 ```
 <profiles>
     <profile>
-        <id>debug</id>
+        <id>oficina</id>
         <dependencies>
             <dependency>
                 <groupId>com.inditex.swt</groupId>
